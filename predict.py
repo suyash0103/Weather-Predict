@@ -19,7 +19,7 @@ def extract_weather_data(url, api_key, target_date, days):
         request = BASE_URL.format(API_KEY, target_date.strftime('%Y%m%d'))
         response = requests.get(request)
         if response.status_code == 200:
-            data = response.json()['history']['dailysummary'][0]
+            data = response.json()['history']['dailysummary'][0]   # extract history and dailysummary part of json
             records.append(DailySummary(
                 date=target_date,
                 meantempm=data['meantempm'],
