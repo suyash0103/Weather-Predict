@@ -11,4 +11,4 @@ BASE_URL = "http://api.wunderground.com/api/API_KEY/history_20180221/q/NE/Lincol
 target_date = datetime(2016, 5, 16)
 features = ["date", "meantempm", "meandewptm", "meanpressurem", "maxhumidity", "minhumidity", "maxtempm",
             "mintempm", "maxdewptm", "mindewptm", "maxpressurem", "minpressurem", "precipm"]
-DailySummary = namedtuple("DailySummary", features)
+DailySummary = namedtuple("DailySummary", features)  # named tuples are special types of tuples, backward compatible
