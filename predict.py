@@ -39,4 +39,4 @@ def extract_weather_data(url, api_key, target_date, days):
         target_date += timedelta(days=1)
     return records
 
-records = extract_weather_data(BASE_URL, API_KEY, target_date, 100)
+records = extract_weather_data(BASE_URL, API_KEY, target_date, 500)
